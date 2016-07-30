@@ -31,6 +31,15 @@ LogItemName({ name: 'Item1' });
 LogItemName(new Item('Item1'));
 // Item1
 ```
+```javascript
+function DrawImage(ctx, img, x, y, w, h){
+	TypeCheck('canvasrenderingcontext', 'htmlimageelement', 'number', 'number', 'number', 'number');
+
+	if (w == 0) w = img.width;
+	if (h == 0) h = img.height;
+	ctx.drawImage(img, x, y, w, h);
+}
+```
 
 **Changelog:**
 - v1.0 
